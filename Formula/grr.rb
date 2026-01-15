@@ -1,24 +1,24 @@
 class Grr < Formula
   desc "GUI speed reading tool using RSVP technique"
   homepage "https://github.com/metcalfc/brr"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/metcalfc/brr/releases/download/v1.0.0/grr_v1.0.0_darwin_amd64.tar.gz"
-      sha256 "290d1175e6df53daa52bf1900f4770def73e892d663f15e0c8b2aadcb5a670b5"
+      url "https://github.com/metcalfc/brr/releases/download/v1.1.0/grr_v1.1.0_darwin_amd64.tar.gz"
+      sha256 "be784d1a3e8fef3d7bb2fb31f86715a0002d1deab0d453900f482971f19c3190"
     end
     on_arm do
-      url "https://github.com/metcalfc/brr/releases/download/v1.0.0/grr_v1.0.0_darwin_arm64.tar.gz"
-      sha256 "76cafcf56ab97fc668f895739ff07fff6c8d25fd84c279786d6448ba09cde442"
+      url "https://github.com/metcalfc/brr/releases/download/v1.1.0/grr_v1.1.0_darwin_arm64.tar.gz"
+      sha256 "e3ac25a18c2bf345e6a5d92006764b2dde39024a21607b5bb428479c42855053"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/metcalfc/brr/releases/download/v1.0.0/grr_v1.0.0_linux_amd64.tar.gz"
-      sha256 "ae549be176341d9da20df718edf9231b280a130c94a338bb2f64d842ac193ad5"
+      url "https://github.com/metcalfc/brr/releases/download/v1.1.0/grr_v1.1.0_linux_amd64.tar.gz"
+      sha256 "28d270752114f0778030b4d6f56fca5b8f5890ea624c2482037c5e8e92970302"
     end
   end
 
@@ -27,6 +27,6 @@ class Grr < Formula
   end
 
   test do
-    assert_match "grr 1.0.0", shell_output("#{bin}/grr -v")
+    assert_match "grr 1.1.0", shell_output("#{bin}/grr -v")
   end
 end

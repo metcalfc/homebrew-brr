@@ -1,28 +1,28 @@
 class Brr < Formula
   desc "Terminal speed reading tool using RSVP technique"
   homepage "https://github.com/metcalfc/brr"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/metcalfc/brr/releases/download/v0.1.5/brr_v0.1.5_darwin_amd64.tar.gz"
-      sha256 "87259e6d710433be587e0e79d194081fc50b0af5ecfe2ac31f3ec22ec74184c7"
+      url "https://github.com/metcalfc/brr/releases/download/v0.1.6/brr_v0.1.6_darwin_amd64.tar.gz"
+      sha256 "ff3be46300b02cd18548161d1c0a88a0f28d03819d4f4856675722541fde208e"
     end
     on_arm do
-      url "https://github.com/metcalfc/brr/releases/download/v0.1.5/brr_v0.1.5_darwin_arm64.tar.gz"
-      sha256 "831359a3cbc98d13348c545cfd0bc12b22aea549b05a201399a0503e314a8e55"
+      url "https://github.com/metcalfc/brr/releases/download/v0.1.6/brr_v0.1.6_darwin_arm64.tar.gz"
+      sha256 "c9b87e2d76cac759031b600208200fc05b3a2cfe116a0ce8db0aa5754830f411"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/metcalfc/brr/releases/download/v0.1.5/brr_v0.1.5_linux_amd64.tar.gz"
-      sha256 "7a89e4ebf47605453cc5fd3c0925f5441b159c2dd64605c0e041c6b5c7ccb30d"
+      url "https://github.com/metcalfc/brr/releases/download/v0.1.6/brr_v0.1.6_linux_amd64.tar.gz"
+      sha256 "8219be0b9779fcf8b6dfb489784020e610b39b4d72a1b114d6f805558a23f313"
     end
     on_arm do
-      url "https://github.com/metcalfc/brr/releases/download/v0.1.5/brr_v0.1.5_linux_arm64.tar.gz"
-      sha256 "529aef929a5e77b0653823467648b61599cf5b8cd1920bc5dd945db440fbaa30"
+      url "https://github.com/metcalfc/brr/releases/download/v0.1.6/brr_v0.1.6_linux_arm64.tar.gz"
+      sha256 "234a01ca282e52b25eb31710771721706448edbe3310ec3e7d3f88b61c79540d"
     end
   end
 
@@ -31,6 +31,6 @@ class Brr < Formula
   end
 
   test do
-    assert_match "brr 0.1.5", shell_output("#{bin}/brr -v")
+    assert_match "brr 0.1.6", shell_output("#{bin}/brr -v")
   end
 end
